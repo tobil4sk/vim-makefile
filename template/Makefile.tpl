@@ -329,7 +329,7 @@ update:
 	if [[ -n `which curl` ]]; then \
 		curl $$URL -o Makefile ; \
 	elif [[ -n `which wget` ]]; then \
-		wget -c $$URL ; \
+		wget $$URL -O Makefile ; \
 	elif [[ -n `which fetch` ]]; then \
 		fetch $$URL ; \
 	fi
